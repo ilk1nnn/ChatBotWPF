@@ -1,0 +1,74 @@
+﻿<Window x:Class="ChatBotWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatBotWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="400">
+    
+    
+    
+    <Grid>
+
+
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#295270" Offset="0.2"></GradientStop>
+                <GradientStop Color="#304F71" Offset="0.4"></GradientStop>
+                <GradientStop Color="#374C72" Offset="0.6"></GradientStop>
+                <GradientStop Color="#444773" Offset="0.8"></GradientStop>
+                <GradientStop Color="#4B4474" Offset="1"></GradientStop>
+                <GradientStop Color="#524175" Offset="1"></GradientStop>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0">
+            <WrapPanel>
+                <Image Source="images/bot.png" Width="80" Margin="155,0,0,0"></Image>
+                <Label Foreground="White" FontSize="25" Margin="-91,95,0,0" FontFamily="Comic Sans MS">ChatBot</Label>
+            </WrapPanel>
+        </Grid>
+
+
+        <Grid Grid.Row="1">
+            <TextBox Name="txtb1" Foreground="White" Height="100" FontSize="15" Width="350" Margin="0,-200,0,0">
+                <TextBox.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#524175" Offset="1"></GradientStop>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox Name="txtb2" Foreground="White" Height="100" FontSize="15" Width="350" Margin="0,20,0,0">
+                <TextBox.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#4B4474" Offset="1"></GradientStop>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <Button Click="Button_Click" FontSize="20" FontFamily="Comic Sans MS" Foreground="White" Width="200" Height="50" Margin="0,220,0,0">
+                <Button.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#374C72" Offset="1"></GradientStop>
+                    </LinearGradientBrush>
+                </Button.Background>
+                Click for Response!
+            </Button>
+        </Grid>
+        
+        
+        
+        
+    </Grid>
+    
+    
+    
+    
+</Window>
